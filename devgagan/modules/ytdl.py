@@ -355,7 +355,7 @@ async def process_video(client, event, url, cookies_env_var, check_duration_and_
             return
          
         await asyncio.to_thread(download_video, url, ydl_opts)
-        title = info_dict.get('title', 'Powered by Team SPY')
+        title = info_dict.get('title', 'Powered by AUBLIC')
         k = video_metadata(download_path)      
         W = k['width']
         H = k['height']
