@@ -1,7 +1,6 @@
 {
   "name": "AUBLIC Extractor Bot",
   "description": "Telegram bot to extract and save restricted course content. Powered by MADX & AUBLIC.",
-  "repository": "https://github.com/devgaganin/save_restricted-content-telegram-bot-repo",
   "keywords": ["telegram", "bot", "pyrogram", "aulbic", "content-extractor"],
   "env": {
     "API_ID": {
