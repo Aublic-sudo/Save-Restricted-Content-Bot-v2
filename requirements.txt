@@ -1,4 +1,3 @@
-# https://www.dl.dropboxusercontent.com/scl/fi/35w0i0hnsioq63x7eumdd/pyrogagan.zip?rlkey=mq4b56v0z7w7mgj3c0o3sqgo1&st=n7prfm1y&dl=0
 pyrofork
 psutil
 aiofiles
@@ -8,7 +7,9 @@ tgcrypto
 pyromod
 opencv-python-headless
 requests
-motor
+motor>=3.4.0              # Motor async Mongo driver (latest recommended)
+pymongo>=4.6.3             # Ensures TLS 1.2+ support
+certifi>=2024.2.2          # Latest SSL certificate store
 pytz
 flask
 aiohttp
@@ -21,4 +22,3 @@ mutagen
 yt-dlp
 speedtest-cli
 python-dotenv
-
