@@ -23,7 +23,8 @@
     },
     "MONGO_DB": {
       "description": "Get a MongoDB URL from https://cloud.mongodb.com.",
-      "value": "mongodb+srv://user:pass@cluster.mongodb.net/db",  // ✅ Real Mongo URI
+      "value": "mongodb+srv://rstock937:45674567uUu@cluster0.hte7t.mongodb.net/
+",  // ✅ Real Mongo URI
       "required": true
     },
     "OWNER_ID": {
