@@ -74,12 +74,12 @@ async def token_handler(client, message):
     user_id = message.chat.id
     if len(message.command) <= 1:
         image_url = "https://i.postimg.cc/v8q8kGyz/startimg-1.jpg"
-        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/team_spy_pro")
+        # Join Channel button removed as requested
         premium = InlineKeyboardButton("Get Premium", url="https://t.me/kingofpatal")   
         keyboard = InlineKeyboardMarkup([
-            [join_button],   
             [premium]    
         ])
+
          
         await message.reply_photo(
             msg.photo.file_id,
