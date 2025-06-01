@@ -1,89 +1,64 @@
-
 {
-  "name": "Save Restricted Content Bot master-v1 branch",
-  "description": "Save Restricted Content Bot by Team SPY",
-  "logo": "https://lh3.googleusercontent.com/-HPcn7AqepNg/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfknb1BkQiq-8_KUVOYcNAJ4swKivDQ/photo.jpg",
-  "keywords": ["python3", "telegram", "MusicBot", "telegram-bot", "pyrogram"],
+  "name": "AUBLIC Extractor Bot",
+  "description": "Telegram bot to extract and save restricted course content. Powered by MADX & AUBLIC.",
   "repository": "https://github.com/devgaganin/save_restricted-content-telegram-bot-repo",
-  "success_url": "https://devgagan.in",
+  "keywords": ["telegram", "bot", "pyrogram", "aulbic", "content-extractor"],
   "env": {
     "API_ID": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": "your_api_id_here",
+      "description": "Telegram API ID from https://my.telegram.org",
       "required": true
     },
     "API_HASH": {
-      "description": "Get this value from https://my.telegram.org",
-      "value": "your_api_hash_here",
+      "description": "Telegram API HASH from https://my.telegram.org",
       "required": true
     },
     "BOT_TOKEN": {
-      "description": "A Bot's token from Botfather",
-      "value": "your_bot_token_here",
-      "required": true
-    },
-    "MONGO_DB": {
-      "description": "Get a MongoDB URL from https://cloud.mongodb.com.",
-      "value": "your_mongodb_url_here",
+      "description": "Telegram Bot Token from @BotFather",
       "required": true
     },
     "OWNER_ID": {
-      "description": "The user ID of the user whom you would like to add as OWNER.",
-      "value": "owner_user_id_here",
-      "required": true
-    },    
-    "FREEMIUM_LIMIT": {
-      "description": "Batch size for free users",
-      "value": "0",
+      "description": "Your Telegram numeric user ID (e.g., 7360968885)",
       "required": true
     },
-    "PREMIUM_LIMIT": {
-      "description": "Batch size for premium users",
-      "value": "500",
-      "required": true
-    },
-    "STRING": {
-      "description": "Enter premium account session string if you want to allow the paid users to upload upto 4GB",
-      "value": "",
-      "required": false
-    },
-
-    "DEFAULT_SESSION": {
-      "description": "Enter session string if you want YOUR USERS not to be forced login and can do things via invite_link",
-      "value": "",
-      "required": false
-    },
-    
-    "WEBSITE_URL": {
-      "description": "Enter shortener website domain eg upshrink.com",
-      "value": "upshrink.com",
-      "required": false
-    },
-    "AD_API": {
-      "description": "Batch size for premium users",
-      "value": "52b4a2cf4687d81e7d3f8f2b7bc2943f618e78cb",
-      "required": false
-    },
-    
-    "SUDO_USERS": {
-      "description": "Other Admins' IDs (optional)",
-      "value": "",
-      "required": false
-    },
-    "CHANNEL_ID": {
-      "description": "Enter Channel ID (-100) and make bot admin there",
-      "value": "channel_id_here",
+    "MONGO_DB": {
+      "description": "MongoDB connection URI (e.g., from MongoDB Atlas)",
       "required": true
     },
     "LOG_GROUP": {
-      "description": "Enter Log Channel/Group ID (-100) and make bot admin there",
-      "value": "log_group_id_here",
-      "required": true
+      "description": "Log group/channel ID (optional)",
+      "required": false
+    },
+    "CHANNEL_ID": {
+      "description": "Private channel ID for forwarding content",
+      "required": false
+    },
+    "FREEMIUM_LIMIT": {
+      "description": "Daily limit for free users",
+      "required": false
+    },
+    "PREMIUM_LIMIT": {
+      "description": "Daily limit for premium users",
+      "required": false
+    },
+    "STRING": {
+      "description": "Pyrogram session string (optional)",
+      "required": false
+    },
+    "AD_API": {
+      "description": "Optional ad API URL",
+      "required": false
+    },
+    "YT_COOKIES": {
+      "description": "YouTube cookies if needed",
+      "required": false
+    },
+    "DEFAUL_SESSION": {
+      "description": "Old invite session string",
+      "required": false
+    },
+    "INSTA_COOKIES": {
+      "description": "Instagram cookies for scraping",
+      "required": false
     }
-  },
-  "buildpacks": [
-    { "url": "heroku/python" },
-    { "url": "https://github.com/heroku/heroku-buildpack-activestorage-preview" }
-  ],
-  "stack": "container"
+  }
 }
