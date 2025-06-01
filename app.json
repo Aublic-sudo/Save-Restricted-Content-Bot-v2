@@ -8,17 +8,17 @@
   "env": {
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "123456",  // ✅ Replace with your real API ID
+      "value": "25352517",  // ✅ Replace with your real API ID
       "required": true
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "abcd1234efgh5678",  // ✅ Real API HASH
+      "value": "2b7e6cf7752c3af91f958d67793a3e0b",  // ✅ Real API HASH
       "required": true
     },
     "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
-      "value": "123456:ABC-DEF_bot_token_here",  // ✅ Real bot token
+      "value": "8025159606:AAGXRIe53L3jj9vS0-wtGEy_pTq7p_Yd1pc",  // ✅ Real bot token
       "required": true
     },
     "MONGO_DB": {
