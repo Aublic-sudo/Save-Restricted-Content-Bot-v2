@@ -1,80 +1,83 @@
+
 {
-  "name": "AUBLIC Restricted Saver Bot",
-  "description": "Save Restricted Telegram Content | AUBLIC Edition",
-  "logo": "https://yourdomain.com/logo.jpg",
-  "keywords": ["python3", "telegram", "restricted", "pyrogram"],
-  "repository": "https://github.com/yourusername/your-forked-repo",
-  "success_url": "https://t.me/yourchannel",
+  "name": "Save Restricted Content Bot master-v1 branch",
+  "description": "Save Restricted Content Bot by Team SPY",
+  "logo": "https://lh3.googleusercontent.com/-HPcn7AqepNg/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfknb1BkQiq-8_KUVOYcNAJ4swKivDQ/photo.jpg",
+  "keywords": ["python3", "telegram", "MusicBot", "telegram-bot", "pyrogram"],
+  "repository": "https://github.com/devgaganin/save_restricted-content-telegram-bot-repo",
+  "success_url": "https://devgagan.in",
   "env": {
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "25352517",  // ✅ Replace with your real API ID
+      "value": "your_api_id_here",
       "required": true
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "2b7e6cf7752c3af91f958d67793a3e0b",  // ✅ Real API HASH
+      "value": "your_api_hash_here",
       "required": true
     },
     "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
-      "value": "8025159606:AAGXRIe53L3jj9vS0-wtGEy_pTq7p_Yd1pc",  // ✅ Real bot token
+      "value": "your_bot_token_here",
       "required": true
     },
     "MONGO_DB": {
       "description": "Get a MongoDB URL from https://cloud.mongodb.com.",
-      "value": "mongodb+srv://rstock937:45674567uUu@cluster0.hte7t.mongodb.net/
-",  // ✅ Real Mongo URI
+      "value": "your_mongodb_url_here",
       "required": true
     },
     "OWNER_ID": {
-      "description": "The user ID of the OWNER.",
-      "value": "7360968885",  // ✅ Your Telegram numeric ID
+      "description": "The user ID of the user whom you would like to add as OWNER.",
+      "value": "owner_user_id_here",
       "required": true
-    },
+    },    
     "FREEMIUM_LIMIT": {
       "description": "Batch size for free users",
-      "value": "999999",
+      "value": "0",
       "required": true
     },
     "PREMIUM_LIMIT": {
       "description": "Batch size for premium users",
-      "value": "9999999",
+      "value": "500",
       "required": true
     },
     "STRING": {
-      "description": "Session string for premium access",
+      "description": "Enter premium account session string if you want to allow the paid users to upload upto 4GB",
       "value": "",
       "required": false
     },
+
     "DEFAULT_SESSION": {
-      "description": "Optional session string for invite link method",
+      "description": "Enter session string if you want YOUR USERS not to be forced login and can do things via invite_link",
       "value": "",
       "required": false
     },
+    
     "WEBSITE_URL": {
-      "description": "Shortener domain",
+      "description": "Enter shortener website domain eg upshrink.com",
       "value": "upshrink.com",
       "required": false
     },
     "AD_API": {
-      "description": "Ad API token",
+      "description": "Batch size for premium users",
       "value": "52b4a2cf4687d81e7d3f8f2b7bc2943f618e78cb",
       "required": false
     },
+    
     "SUDO_USERS": {
-      "description": "Comma-separated SUDO user IDs",
-      "value": "7360968885",
+      "description": "Other Admins' IDs (optional)",
+      "value": "",
       "required": false
     },
     "CHANNEL_ID": {
-      "description": "Enter Channel ID (starts with -100)",
-      "value": "-100269815076",  // ✅ Your channel ID
+      "description": "Enter Channel ID (-100) and make bot admin there",
+      "value": "channel_id_here",
       "required": true
     },
     "LOG_GROUP": {
-      "description": "Enter Log Group ID (starts with -100)",
-      "value": "-1001234567890",  // ✅ Your log group ID
+      "description": "Enter Log Channel/Group ID (-100) and make bot admin there",
+      "value": "log_group_id_here",
       "required": true
     }
   },
