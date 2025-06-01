@@ -222,18 +222,16 @@ async def batch_link(_, message):
         return
 
     # Validate and interval check
-    can_proceed, response_message = await check_interval(user_id, freecheck)
-    if not can_proceed:
-        await message.reply(response_message)
-        return
-        
-    join_button = InlineKeyboardButton("Join Channel", url="https://t.me/team_spy_pro")
-    keyboard = InlineKeyboardMarkup([[join_button]])
-    pin_msg = await app.send_message(
-        user_id,
-        f"Batch process started ⚡\nProcessing: 0/{cl}\n\n**Powered by AUBLIC**",
-        reply_markup=keyboard
-    )
+can_proceed, response_message = await check_interval(user_id, freecheck)
+if not can_proceed:
+    await message.reply(response_message)
+    return
+
+pin_msg = await app.send_message(
+    user_id,
+    f"Batch process started ⚡\nProcessing: 0/{cl}\n\n**Powered by AUBLIC**"
+)
+
     await pin_msg.pin(both_sides=True)
 
     users_loop[user_id] = True
