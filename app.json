@@ -1,82 +1,79 @@
 {
-  "name": "Save Restricted Content Bot master-v1 branch",
-  "description": "Save Restricted Content Bot by Team SPY",
-  "logo": "https://lh3.googleusercontent.com/-HPcn7AqepNg/AAAAAAAAAAI/AAAAAAAAAAA/ALKGfknb1BkQiq-8_KUVOYcNAJ4swKivDQ/photo.jpg",
-  "keywords": ["python3", "telegram", "MusicBot", "telegram-bot", "pyrogram"],
-  "repository": "https://github.com/devgaganin/save_restricted-content-telegram-bot-repo",
-  "success_url": "https://devgagan.in",
+  "name": "AUBLIC Restricted Saver Bot",
+  "description": "Save Restricted Telegram Content | AUBLIC Edition",
+  "logo": "https://yourdomain.com/logo.jpg",
+  "keywords": ["python3", "telegram", "restricted", "pyrogram"],
+  "repository": "https://github.com/yourusername/your-forked-repo",
+  "success_url": "https://t.me/yourchannel",
   "env": {
     "API_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "your_api_id_here",
+      "value": "123456",  // ✅ Replace with your real API ID
       "required": true
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": "your_api_hash_here",
+      "value": "abcd1234efgh5678",  // ✅ Real API HASH
       "required": true
     },
     "BOT_TOKEN": {
       "description": "A Bot's token from Botfather",
-      "value": "your_bot_token_here",
+      "value": "123456:ABC-DEF_bot_token_here",  // ✅ Real bot token
       "required": true
     },
     "MONGO_DB": {
       "description": "Get a MongoDB URL from https://cloud.mongodb.com.",
-      "value": "your_mongodb_url_here",
+      "value": "mongodb+srv://user:pass@cluster.mongodb.net/db",  // ✅ Real Mongo URI
       "required": true
     },
     "OWNER_ID": {
-      "description": "The user ID of the user whom you would like to add as OWNER.",
-      "value": "owner_user_id_here",
+      "description": "The user ID of the OWNER.",
+      "value": "7360968885",  // ✅ Your Telegram numeric ID
       "required": true
-    },    
+    },
     "FREEMIUM_LIMIT": {
       "description": "Batch size for free users",
-      "value": "0",
+      "value": "999999",
       "required": true
     },
     "PREMIUM_LIMIT": {
       "description": "Batch size for premium users",
-      "value": "500",
+      "value": "9999999",
       "required": true
     },
     "STRING": {
-      "description": "Enter premium account session string if you want to allow the paid users to upload upto 4GB",
+      "description": "Session string for premium access",
       "value": "",
       "required": false
     },
-
     "DEFAULT_SESSION": {
-      "description": "Enter session string if you want YOUR USERS not to be forced login and can do things via invite_link",
+      "description": "Optional session string for invite link method",
       "value": "",
       "required": false
     },
-    
     "WEBSITE_URL": {
-      "description": "Enter shortener website domain eg upshrink.com",
+      "description": "Shortener domain",
       "value": "upshrink.com",
       "required": false
     },
     "AD_API": {
-      "description": "Batch size for premium users",
+      "description": "Ad API token",
       "value": "52b4a2cf4687d81e7d3f8f2b7bc2943f618e78cb",
       "required": false
     },
-    
     "SUDO_USERS": {
-      "description": "Other Admins' IDs (optional)",
-      "value": "",
+      "description": "Comma-separated SUDO user IDs",
+      "value": "7360968885",
       "required": false
     },
     "CHANNEL_ID": {
-      "description": "Enter Channel ID (-100) and make bot admin there",
-      "value": "channel_id_here",
+      "description": "Enter Channel ID (starts with -100)",
+      "value": "-100269815076",  // ✅ Your channel ID
       "required": true
     },
     "LOG_GROUP": {
-      "description": "Enter Log Channel/Group ID (-100) and make bot admin there",
-      "value": "log_group_id_here",
+      "description": "Enter Log Group ID (starts with -100)",
+      "value": "-1001234567890",  // ✅ Your log group ID
       "required": true
     }
   },
